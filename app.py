@@ -1,3 +1,15 @@
+import os
+import subprocess
+
+def install(package):
+    subprocess.check_call([os.sys.executable, "-m", "pip", "install", package])
+
+install("joblib")
+install("pandas")
+install("matplotlib")
+install("seaborn")
+install("scikit-learn")
+
 import streamlit as st
 import joblib
 import pandas as pd
